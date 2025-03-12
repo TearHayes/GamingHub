@@ -1,0 +1,210 @@
+/* Profile Styles */
+.profile-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.dark-theme .profile-container {
+  background-color: var(--dark-card);
+}
+
+.light-theme .profile-container {
+  background-color: var(--light-card);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid;
+  margin-bottom: 1.5rem;
+}
+
+.dark-theme .profile-header {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.light-theme .profile-header {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary);
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.profile-rank {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+
+.profile-rank-cheater {
+  background-color: #9333ea;
+  color: white;
+}
+
+.profile-rank-creator {
+  background-color: #0ea5e9;
+  color: white;
+}
+
+.profile-rank-developer {
+  background-color: #f97316;
+  color: white;
+}
+
+.profile-tabs {
+  display: flex;
+  border-bottom: 1px solid;
+  margin-bottom: 1.5rem;
+}
+
+.dark-theme .profile-tabs {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.light-theme .profile-tabs {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.profile-tab {
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.profile-tab:hover {
+  color: var(--primary);
+}
+
+.profile-tab.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+.profile-section {
+  display: none;
+}
+
+.profile-section.active {
+  display: block;
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.settings-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.settings-form-label {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.settings-form-input {
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  border: 1px solid;
+  background-color: transparent;
+  transition: border-color 0.3s;
+}
+
+.dark-theme .settings-form-input {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: var(--dark-text);
+}
+
+.light-theme .settings-form-input {
+  border-color: rgba(0, 0, 0, 0.2);
+  color: var(--light-text);
+}
+
+.settings-form-input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.settings-form-submit {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.settings-form-submit:hover {
+  background-color: var(--primary-dark);
+}
+
+.avatar-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar-preview {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary);
+}
+
+.avatar-upload-btn {
+  background-color: transparent;
+  border: 1px dashed;
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.dark-theme .avatar-upload-btn {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: var(--dark-text);
+}
+
+.light-theme .avatar-upload-btn {
+  border-color: rgba(0, 0, 0, 0.2);
+  color: var(--light-text);
+}
+
+.avatar-upload-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.avatar-upload-input {
+  display: none;
+}
